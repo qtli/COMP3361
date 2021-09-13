@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HKU COMP3361, Fall 2021</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="./comp3363_files/css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://www.cs.hku.hk/images/hku.png">
+    <link href="./comp3363_files/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="./comp3363_files/non-responsive.css" rel="stylesheet">
+
+
+<style type="text/css">
+  body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .sidebar-nav {
+    padding: 0px 0;
+  }
+  .page-header {
+    border-bottom: 1px solid #ADA9A9;
+    margin-bottom: 10px;
+  }
+
+</style>
+
+<style type="text/css">
+</style>
+
+<style>@font-face {
+	font-family: "wticons";
+	src: url("data:font/woff2;charset=utf-8;base64,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") format("woff2");
+}
+
+.wticons {
+	line-height: 1;
+}
+
+.wticons:before {
+	font-family: wticons !important;
+	font-style: normal;
+	font-weight: normal !important;
+	vertical-align: top;
+}
+
+.wticon-account:before {
+	content: "\f101";
+}
+.wticon-add:before {
+	content: "\f102";
+}
+.wticon-casual:before {
+	content: "\f103";
+}
+.wticon-check:before {
+	content: "\f104";
+}
+.wticon-checkSmall:before {
+	content: "\f105";
+}
+.wticon-chevron:before {
+	content: "\f106";
+}
+.wticon-copy:before {
+	content: "\f107";
+}
+.wticon-copySmall:before {
+	content: "\f108";
+}
+.wticon-dismiss:before {
+	content: "\f109";
+}
+.wticon-error:before {
+	content: "\f10a";
+}
+.wticon-expand:before {
+	content: "\f10b";
+}
+.wticon-feedback:before {
+	content: "\f10c";
+}
+.wticon-find:before {
+	content: "\f10d";
+}
+.wticon-formal:before {
+	content: "\f10e";
+}
+.wticon-grayLogo:before {
+	content: "\f10f";
+}
+.wticon-ignore:before {
+	content: "\f110";
+}
+.wticon-info:before {
+	content: "\f111";
+}
+.wticon-leftChevron:before {
+	content: "\f112";
+}
+.wticon-logo:before {
+	content: "\f113";
+}
+.wticon-love:before {
+	content: "\f114";
+}
+.wticon-noRecommendations:before {
+	content: "\f115";
+}
+.wticon-paste:before {
+	content: "\f116";
+}
+.wticon-pin:before {
+	content: "\f117";
+}
+.wticon-premium:before {
+	content: "\f118";
+}
+.wticon-premiumDetail:before {
+	content: "\f119";
+}
+.wticon-premiumFull:before {
+	content: "\f11a";
+}
+.wticon-recommendationLight:before {
+	content: "\f11b";
+}
+.wticon-recommendationLightCard:before {
+	content: "\f11c";
+}
+.wticon-recommendationLightNoSuggestions:before {
+	content: "\f11d";
+}
+.wticon-refine:before {
+	content: "\f11e";
+}
+.wticon-rewrite:before {
+	content: "\f11f";
+}
+.wticon-rightChevron:before {
+	content: "\f120";
+}
+.wticon-rocket:before {
+	content: "\f121";
+}
+.wticon-sentenceExamples:before {
+	content: "\f122";
+}
+.wticon-settings:before {
+	content: "\f123";
+}
+.wticon-shorten:before {
+	content: "\f124";
+}
+.wticon-tutorial:before {
+	content: "\f125";
+}
+.wticon-unlock:before {
+	content: "\f126";
+}
+.wticon-warn:before {
+	content: "\f127";
+}
+.wticon-WordtuneButton:before {
+	content: "\f128";
+}
+.wticon-x:before {
+	content: "\f129";
+}
+</style></head>
+
+<body style="" data-new-gr-c-s-check-loaded="14.1026.0" data-gr-ext-installed="">
+
+
+<div class="container">
+    <div class="row">
+    <div class="col-lg-12">
+
+      <div class="page-header">
+
+
+
+      <h2>
+
+    <img class="center-image pt-2" alt="comp3361 Robot" src="course_logo.png" width="100px">
+
+    <b>COMP3361  </b> | Natural Language Processing </h2> <br>  
+      </div>
+
+      <div class="bs-component">
+      <table class="table table-bordered table-striped">
+        <tbody>
+        <tr>
+        <td>Instructor</td> <td><a href="https://ikekonglp.github.io/">Lingpeng Kong</a> (lpk AT cs.hku.hk)</td>
+        </tr>
+        <tr>
+        <td>Season</td> <td> Fall 2021 </td>
+        </tr>
+        <tr>
+        <td>Location</td> <td><a href="https://www.les.hku.hk/teaching-space/cba">CBA</a>, Chow Yei Ching Building</td>
+        </tr>
+
+        <tr>
+        <td>TA</td> <td><a href="https://qtli.github.io/">Qintong Li</a> (qtli AT connect.hku.hk)</td>
+        </tr>
+        </tbody>
+        </table>
+
+        <strong>Course description:</strong>
+        <p>Natural language processing (NLP) is the study of human language from a computational perspective. The course will be focusing on machine learning and corpus-based methods and algorithms. We will cover syntactic, semantic and discourse processing models. We will describe the use of these methods and models in applications including syntactic parsing, information extraction, statistical machine translation, dialogue systems, and summarization. This course starts with language models (LMs), which are both front and center in natural language processing (NLP), and then introduces key machine learning (ML) ideas that students should grasp (e.g. feature-based models, log-linear models and then the neural models). We will land on modern generic meaning representation methods (e.g. BERT/GPT-3) and the idea of pretraining / finetuning.
+        </p>
+
+		<strong>Prerequisites:</strong>
+		<p>COMP3314 or COMP3340, MATH1853</p>
+
+
+		<strong>Assessment:</strong>
+		<p>50% continuous assessment, 50% examination</p>
+
+
+      <h3><b>Schedule</b></h3>
+      <a name="class" id="class"></a>
+        <table class="table table-bordered table-striped">
+        <thead>
+        <tr>
+          <th>Lecture&nbsp;&nbsp;&nbsp;&nbsp;</th>
+          <th>Topic/papers</th>
+          <th>Recommended reading</th>
+          <th>Materials</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr><td> Sept. 3</td>
+        <td>
+        Introduction to NLP, Language Models [<a href="1.pdf">slides</a>]
+        </td>
+        <td>[J&M Ch. 1] [<a href="https://www.cs.cornell.edu/home/llee/papers/cstb.pdf">Lee, 2004</a>]</td>
+        
+        </tr>
+
+
+
+        <tr><td>Sept. 7 </td>
+        <td>
+        Language Models, RNNLM [<a href="2.pdf">slides</a>]
+        </td>
+        <td>[J&M Ch. 4] [<a href="https://web.stanford.edu/~jurafsky/slp3/7.pdf">J&M Ch. 7</a>] [<a href="http://www.cs.columbia.edu/~mcollins/lm-spring2013.pdf">M. Collins, Notes 1</a>][<a href="http://demo.clab.cs.cmu.edu/cdyer/lstms.pdf">C. Dyer, LSTM Notes</a>]</td>
+        <td>[<a href="hw1.pdf">Assignment 1</a>]</td>
+        </tr>
+
+        <tr><td>Sept. 10 </td>
+        <td>
+        BERT, Pretraining + Fine-tuning [<a href="3.pdf">slides</a>] <br>
+        </td>
+        <td>[<a href="https://arxiv.org/pdf/1810.04805.pdf">BERT paper</a>]</td>
+        <td></td>
+        </tr>
+
+        </tbody>
+        </table>
+
+    <h3><b>Assignments</b></h3>
+
+    <strong>Submission:</strong>
+    <p>
+      <!-- Homeworks should be written up clearly and succinctly.  -->
+      Please submit to moodle a zip file that contains (1) your code, (2) a write-up (pdf) that explains your model, and (3) your model’s predictions (strictly following the required format). Please name your zip file in formt UniversityNumber.zip.
+   </p>
+
+   <strong>Programming:</strong>
+   <p>
+     For each assignment, you can use a different programming language (e.g., Python or C++) and different deep learning frameworks (e.g., PyTorch or Tensorflow). 
+   </p>
+
+   <strong>Evaluation:</strong>
+   <p>
+     We will review your work individually to ensure that you receive due credit for your work. Please note that both your project output and logic will be considered for marking.
+   </p>
+
+   <strong>Policy and honor code:</strong>
+   <p>
+     You are free to discuss ideas and implementation details with other students. However, copying others’ codes will not help your study but jeopardize it. We will check your work against other submissions and Internet sources. It is easy to know if you did your own work or not. To be clear, we encourage you to discuss with your classmates but you MUST do your work independently and CANNOT simply copy. If plagiarism is identified, one may face serious consequences according to the Faculty and University policy.
+   </p>
+</div><!--container-->
+<script src="./comp3363_files/jquery-1.10.2.min.js"></script>
+<script src="./comp3363_files/bootstrap.min.js"></script>
+
+<footer>&copy; Copyright 2021. Department of Computer Science, The University of Hong Kong.</footer>
+
+
+</div></div></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
